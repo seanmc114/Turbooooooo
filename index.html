@@ -1,38 +1,40 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Turbooooooo</title>
-<link rel="stylesheet" href="style.css">
+  <meta charset="utf-8" />
+  <title>Turbooooooo</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
 
-<div class="crest"></div>
+<main class="wrap">
+  <h1>Turbooooooo</h1>
+  <p class="sub">Ser vs Estar • Past tenses only</p>
 
-<h1 class="title">Turbooooooo</h1>
-
-<div id="levels"></div>
-
-<div id="game" class="hidden">
-  <div id="hud">
-    <span id="levelLabel"></span>
-    <span id="timer">0.0s</span>
+  <div class="card" style="margin-bottom:16px;">
+    <div style="font-weight:900;margin-bottom:10px;">Past tense focus</div>
+    <div class="tiny">
+      Pick the correct verb idea for each past-tense clue. Best time is stored on each level tile.
+      Clear a level with 10/10 to unlock the next one.
+    </div>
   </div>
 
-  <h2 id="prompt"></h2>
+  <div class="grid" id="grid"></div>
 
-  <button onclick="answer('ser')" class="btn ser">SER</button>
-  <button onclick="answer('estar')" class="btn estar">ESTAR</button>
+  <div class="card dash">
+    <div>
+      <strong>Total levels cleared:</strong>
+      <span id="clearedCount">0</span> / 8
+    </div>
+    <div class="tiny">
+      Imperfect and preterite, with event vs location traps and adjective/state traps.
+    </div>
+    <button id="reset" class="ghost" type="button">Reset Progress</button>
+  </div>
+</main>
 
-  <p id="feedback"></p>
-</div>
-
-<div id="result" class="hidden">
-  <h2 id="resultTitle"></h2>
-  <p id="resultText"></p>
-  <button onclick="back()">Back</button>
-</div>
+<footer>© 2026 Synge St Games — imagination and perseverance</footer>
 
 <script src="script.js"></script>
 </body>
