@@ -1,4 +1,4 @@
-// --- Turbooooooo: SAME GAME, fixed prompts only ---
+// Turbooooooo — same Turbo engine, past forms of SER / ESTAR only
 
 const LEVEL_POOLS = {
   Past: {
@@ -12,7 +12,12 @@ const LEVEL_POOLS = {
       { en: "I was not shy", es: "no era" },
       { en: "You were not a student", es: "no eras" },
       { en: "He was not my brother", es: "no era" },
-      { en: "They were not neighbours", es: "no eran" }
+      { en: "They were not neighbours", es: "no eran" },
+      { en: "Was I a good student?", es: "era?" },
+      { en: "Were you my teacher?", es: "eras?" },
+      { en: "Was he from Spain?", es: "era?" },
+      { en: "Were we cousins?", es: "éramos?" },
+      { en: "Were they friends?", es: "eran?" }
     ],
 
     2: [
@@ -25,7 +30,12 @@ const LEVEL_POOLS = {
       { en: "I was not ready", es: "no estaba" },
       { en: "You were not at school", es: "no estabas" },
       { en: "He was not well", es: "no estaba" },
-      { en: "They were not in Dublin", es: "no estaban" }
+      { en: "They were not in Dublin", es: "no estaban" },
+      { en: "Was I ill?", es: "estaba?" },
+      { en: "Were you at home?", es: "estabas?" },
+      { en: "Was he angry?", es: "estaba?" },
+      { en: "Were we in the park?", es: "estábamos?" },
+      { en: "Were they happy?", es: "estaban?" }
     ],
 
     3: [
@@ -38,7 +48,12 @@ const LEVEL_POOLS = {
       { en: "I was not the problem", es: "no fui" },
       { en: "You were not my partner", es: "no fuiste" },
       { en: "He was not the captain", es: "no fue" },
-      { en: "They were not our teachers", es: "no fueron" }
+      { en: "They were not our teachers", es: "no fueron" },
+      { en: "Was I the first?", es: "fui?" },
+      { en: "Were you the leader?", es: "fuiste?" },
+      { en: "Was he the best player?", es: "fue?" },
+      { en: "Were we the winners?", es: "fuimos?" },
+      { en: "Were they your cousins?", es: "fueron?" }
     ],
 
     4: [
@@ -51,7 +66,12 @@ const LEVEL_POOLS = {
       { en: "I was not ready", es: "no estuve" },
       { en: "You were not in class", es: "no estuviste" },
       { en: "He was not calm", es: "no estuvo" },
-      { en: "They were not at the party", es: "no estuvieron" }
+      { en: "They were not at the party", es: "no estuvieron" },
+      { en: "Was I in trouble?", es: "estuve?" },
+      { en: "Were you at school?", es: "estuviste?" },
+      { en: "Was he nervous?", es: "estuvo?" },
+      { en: "Were we in town?", es: "estuvimos?" },
+      { en: "Were they tired?", es: "estuvieron?" }
     ],
 
     5: [
@@ -64,7 +84,12 @@ const LEVEL_POOLS = {
       { en: "They were not neighbours", es: "no eran" },
       { en: "They were not at home", es: "no estaban" },
       { en: "You were very kind", es: "eras" },
-      { en: "You were in a bad mood", es: "estabas" }
+      { en: "You were in a bad mood", es: "estabas" },
+      { en: "Was she your cousin?", es: "era?" },
+      { en: "Was she tired?", es: "estaba?" },
+      { en: "Were they doctors?", es: "eran?" },
+      { en: "Were they in school?", es: "estaban?" },
+      { en: "Were we neighbours?", es: "éramos?" }
     ],
 
     6: [
@@ -77,62 +102,271 @@ const LEVEL_POOLS = {
       { en: "They were not the champions", es: "no fueron" },
       { en: "They were not in the hall", es: "no estuvieron" },
       { en: "You were my partner", es: "fuiste" },
-      { en: "You were very quiet", es: "estuviste" }
+      { en: "You were very quiet", es: "estuviste" },
+      { en: "Was she the leader?", es: "fue?" },
+      { en: "Was she worried?", es: "estuvo?" },
+      { en: "Were they the teachers?", es: "fueron?" },
+      { en: "Were they at home?", es: "estuvieron?" },
+      { en: "Were we the winners?", es: "fuimos?" }
     ],
 
     7: [
       { en: "I used to be shy", es: "era" },
-      { en: "I used to be tired", es: "estaba" },
-      { en: "I was the winner", es: "fui" },
-      { en: "I was exhausted", es: "estuve" },
-      { en: "They used to be serious", es: "eran" },
-      { en: "They used to be in school", es: "estaban" },
-      { en: "They were the guests", es: "fueron" },
-      { en: "They were delighted", es: "estuvieron" },
+      { en: "I used to be tired after training", es: "estaba" },
+      { en: "I was the winner in the end", es: "fui" },
+      { en: "I was exhausted afterwards", es: "estuve" },
       { en: "We used to be neighbours", es: "éramos" },
-      { en: "We used to be in class", es: "estábamos" }
+      { en: "We used to be in the same class", es: "estábamos" },
+      { en: "We were champions that year", es: "fuimos" },
+      { en: "We were in Galway for the weekend", es: "estuvimos" },
+      { en: "They used to be very serious", es: "eran" },
+      { en: "They used to be in school together", es: "estaban" },
+      { en: "They were the guests of honour", es: "fueron" },
+      { en: "They were delighted after the show", es: "estuvieron" },
+      { en: "Was I your friend back then?", es: "era?" },
+      { en: "Was I at home then?", es: "estaba?" },
+      { en: "Was I ill yesterday?", es: "estuve?" }
     ],
 
     8: [
-      { en: "They were good friends", es: "eran" },
-      { en: "They were very happy", es: "estaban" },
-      { en: "They were the winners", es: "fueron" },
-      { en: "They were in Dublin", es: "estuvieron" },
-      { en: "We were cousins", es: "éramos" },
-      { en: "We were at the beach", es: "estuvimos" },
-      { en: "I was a student", es: "era" },
-      { en: "I was in Spain", es: "estuve" },
-      { en: "He was a teacher", es: "era" },
-      { en: "He was at home", es: "estaba" }
+      { en: "I was (ser, imperfect) a good student", es: "era" },
+      { en: "I was (ser, preterite) the winner", es: "fui" },
+      { en: "I was (estar, imperfect) at home", es: "estaba" },
+      { en: "I was (estar, preterite) in Dublin", es: "estuve" },
+      { en: "We were (ser, imperfect) cousins", es: "éramos" },
+      { en: "We were (ser, preterite) the champions", es: "fuimos" },
+      { en: "We were (estar, imperfect) in the kitchen", es: "estábamos" },
+      { en: "We were (estar, preterite) at the beach", es: "estuvimos" },
+      { en: "They were (ser, imperfect) good friends", es: "eran" },
+      { en: "They were (ser, preterite) the winners", es: "fueron" },
+      { en: "They were (estar, imperfect) very happy", es: "estaban" },
+      { en: "They were (estar, preterite) at school", es: "estuvieron" },
+      { en: "Was he? (ser, preterite) your teacher", es: "fue?" },
+      { en: "Was he? (estar, imperfect) at home", es: "estaba?" },
+      { en: "Was he? (estar, preterite) nervous", es: "estuvo?" }
     ],
 
     9: [
-      { en: "They were not happy", es: "no estaban" },
-      { en: "They were not friends", es: "no eran" },
-      { en: "They were not the winners", es: "no fueron" },
-      { en: "They were not in the church", es: "no estuvieron" },
       { en: "We were not cousins", es: "no éramos" },
       { en: "We were not in class", es: "no estábamos" },
-      { en: "We were not the champions", es: "no fuimos" },
+      { en: "We were not the winners", es: "no fuimos" },
       { en: "We were not at the cinema", es: "no estuvimos" },
+      { en: "They were not funny", es: "no eran" },
+      { en: "They were not happy", es: "no estaban" },
+      { en: "They were not our neighbours", es: "no fueron" },
+      { en: "They were not in the church", es: "no estuvieron" },
+      { en: "Was it your birthday?", es: "era?" },
+      { en: "Was it the final?", es: "fue?" },
+      { en: "Was he at home?", es: "estaba?" },
+      { en: "Was he calm all evening?", es: "estuvo?" },
       { en: "You were not my teacher", es: "no eras" },
-      { en: "You were not at school", es: "no estabas" }
+      { en: "You were not at school", es: "no estabas" },
+      { en: "You were not in the library", es: "no estuviste" }
     ],
 
     10: [
-      { en: "They were friends", es: "eran" },
-      { en: "They were happy", es: "estaban" },
-      { en: "They were the winners", es: "fueron" },
-      { en: "They were in Dublin", es: "estuvieron" },
+      { en: "I was a student", es: "era" },
+      { en: "I was at home", es: "estaba" },
+      { en: "I was the winner", es: "fui" },
+      { en: "I was in Madrid", es: "estuve" },
       { en: "We were cousins", es: "éramos" },
       { en: "We were in class", es: "estábamos" },
       { en: "We were the champions", es: "fuimos" },
       { en: "We were at the concert", es: "estuvimos" },
-      { en: "I was a student", es: "era" },
-      { en: "I was in Madrid", es: "estuve" }
+      { en: "They were my friends", es: "eran" },
+      { en: "They were happy", es: "estaban" },
+      { en: "They were the winners", es: "fueron" },
+      { en: "They were in Dublin", es: "estuvieron" },
+      { en: "They were not the champions", es: "no fueron" },
+      { en: "They were not at home", es: "no estuvieron" },
+      { en: "Were they happy?", es: "estaban?" },
+      { en: "Were they your teachers?", es: "fueron?" },
+      { en: "Were we cousins?", es: "éramos?" },
+      { en: "Were we at the beach?", es: "estuvimos?" }
     ]
   }
 };
 
-// (Everything below stays EXACTLY the same as your working game)
-// 👉 DO NOT TOUCH your existing engine code below this point
+// Same engine
+let currentTense = "Past";
+let currentLevel = 1;
+let unlockedLevels = { Present: 1, Past: 1, Future: 1 };
+let gameVerbs = [];
+let startTime, timerInterval;
+
+const tenseButtons = document.querySelectorAll(".tense-button");
+const levelList = document.getElementById("level-list");
+const gameContainer = document.getElementById("game");
+const questionsContainer = document.getElementById("questions");
+const resultsContainer = document.getElementById("results");
+
+// Make Past the active visible tense
+tenseButtons.forEach(btn => {
+  btn.classList.toggle("active", btn.dataset.tense === "Past");
+  if (btn.dataset.tense !== "Past") {
+    btn.disabled = true;
+    btn.style.opacity = "0.55";
+  }
+});
+
+function normalizeAnswer(text) {
+  return String(text || "")
+    .trim()
+    .toLowerCase()
+    .normalize("NFD")
+    .replace(/[\u0300-\u036f]/g, "");
+}
+
+function shuffleArray(array) {
+  const copy = [...array];
+  for (let i = copy.length - 1; i > 0; i--) {
+    const j = Math.floor(Math.random() * (i + 1));
+    [copy[i], copy[j]] = [copy[j], copy[i]];
+  }
+  return copy;
+}
+
+renderLevels();
+
+function renderLevels() {
+  levelList.style.display = "flex";
+  gameContainer.style.display = "none";
+  levelList.innerHTML = "";
+
+  for (let i = 1; i <= 10; i++) {
+    const button = document.createElement("button");
+    const bestTimeKey = `bestTime_${currentTense}_Level${i}`;
+    const bestTime = localStorage.getItem(bestTimeKey);
+    const locked = i > unlockedLevels[currentTense];
+
+    button.textContent = locked
+      ? `Level ${i} 🔒`
+      : `Level ${i}${bestTime ? ` - Best: ${bestTime}s` : ""}`;
+
+    button.disabled = locked;
+
+    if (!locked) {
+      button.addEventListener("click", () => startGame(i));
+    }
+
+    levelList.appendChild(button);
+  }
+}
+
+function startGame(level) {
+  currentLevel = level;
+  gameVerbs = shuffleArray(LEVEL_POOLS.Past[level]).slice(0, 10);
+
+  levelList.style.display = "none";
+  gameContainer.style.display = "block";
+  questionsContainer.innerHTML = "";
+  resultsContainer.innerHTML = "";
+
+  gameVerbs.forEach(verb => {
+    const div = document.createElement("div");
+    div.innerHTML = `<strong>${verb.en}</strong>: <input type="text" data-answer="${verb.es}">`;
+    questionsContainer.appendChild(div);
+  });
+
+  startTimer();
+}
+
+function startTimer() {
+  startTime = Date.now();
+  document.getElementById("timer").textContent = "Time: 0s";
+
+  clearInterval(timerInterval);
+  timerInterval = setInterval(() => {
+    const elapsed = Math.floor((Date.now() - startTime) / 1000);
+    document.getElementById("timer").textContent = `Time: ${elapsed}s`;
+  }, 1000);
+}
+
+function stopTimer() {
+  clearInterval(timerInterval);
+}
+
+document.getElementById("submit").addEventListener("click", () => {
+  stopTimer();
+  const elapsed = Math.floor((Date.now() - startTime) / 1000);
+
+  let penalty = 0;
+  let correct = 0;
+
+  document.querySelectorAll("#questions input").forEach(input => {
+    const user = normalizeAnswer(input.value);
+    const answer = normalizeAnswer(input.dataset.answer);
+
+    if (user === answer) {
+      correct++;
+      input.style.border = "2px solid green";
+    } else {
+      penalty += 30;
+      input.style.border = "2px solid red";
+    }
+  });
+
+  const totalTime = elapsed + penalty;
+
+  resultsContainer.innerHTML = `
+    <h3>Game Over!</h3>
+    <p>Correct: ${correct}/10</p>
+    <p>Time: ${elapsed}s + Penalty: ${penalty}s = <strong>${totalTime}s</strong></p>
+    <h4>Feedback:</h4>
+  `;
+
+  document.querySelectorAll("#questions input").forEach(input => {
+    const correctAnswer = input.dataset.answer;
+    const userAnswer = input.value.trim();
+
+    if (normalizeAnswer(userAnswer) !== normalizeAnswer(correctAnswer)) {
+      const feedback = document.createElement("p");
+      feedback.innerHTML = `<strong>${input.previousSibling.textContent}</strong> → Correct answer: <span style='color: green;'>${correctAnswer}</span> | Your answer: <span style='color: red;'>${userAnswer || "(blank)"}</span>`;
+      resultsContainer.appendChild(feedback);
+    }
+  });
+
+  const bestTimeKey = `bestTime_${currentTense}_Level${currentLevel}`;
+  const savedBestTime = localStorage.getItem(bestTimeKey);
+
+  if (!savedBestTime || totalTime < parseInt(savedBestTime, 10)) {
+    localStorage.setItem(bestTimeKey, totalTime);
+  }
+
+  if (totalTime <= levelUnlockTime(currentLevel)) {
+    if (unlockedLevels[currentTense] < currentLevel + 1 && currentLevel < 10) {
+      unlockedLevels[currentTense] = currentLevel + 1;
+      const unlockMsg = document.createElement("p");
+      unlockMsg.style.color = "blue";
+      unlockMsg.innerHTML = `<strong>Level ${currentLevel + 1} Unlocked!</strong>`;
+      resultsContainer.appendChild(unlockMsg);
+    }
+  }
+
+  if (correct === 10) {
+    const celebration = document.createElement("div");
+    celebration.className = "perfect-celebration";
+    celebration.textContent = "🎉 PERFECT GAME! 🎉";
+    resultsContainer.prepend(celebration);
+
+    setTimeout(() => {
+      celebration.remove();
+    }, 5000);
+  }
+
+  const tryAgainButton = document.createElement("button");
+  tryAgainButton.textContent = "Try Again";
+  tryAgainButton.className = "try-again";
+  tryAgainButton.onclick = () => startGame(currentLevel);
+  resultsContainer.appendChild(tryAgainButton);
+
+  const backButton = document.createElement("button");
+  backButton.textContent = "Back to Levels";
+  backButton.id = "back-button";
+  backButton.onclick = () => renderLevels();
+  resultsContainer.appendChild(backButton);
+});
+
+function levelUnlockTime(level) {
+  return 100 - (level - 1) * 5;
+}
