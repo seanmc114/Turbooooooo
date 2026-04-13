@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Turbooooooo</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="crest"></div>
+
+<h1 class="title">Turbooooooo</h1>
+
+<div id="levels"></div>
+
+<div id="game" class="hidden">
+  <div id="hud">
+    <span id="levelLabel"></span>
+    <span id="timer">0.0s</span>
+  </div>
+
+  <h2 id="prompt"></h2>
+
+  <button onclick="answer('ser')" class="btn ser">SER</button>
+  <button onclick="answer('estar')" class="btn estar">ESTAR</button>
+
+  <p id="feedback"></p>
+</div>
+
+<div id="result" class="hidden">
+  <h2 id="resultTitle"></h2>
+  <p id="resultText"></p>
+  <button onclick="back()">Back</button>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
