@@ -1,33 +1,33 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Turbooooooo</title>
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="style.css" />
 </head>
-
 <body>
+  <div class="container">
 
-<h1><span class="turbo">TURBOOOOOOO</span></h1>
+    <h1><span class="turbo">TURBOOOOOOO</span></h1>
 
-<div id="tense-buttons">
-  <button class="tense-button active" data-tense="Present">Present</button>
-  <button class="tense-button" data-tense="Past">Past</button>
-  <button class="tense-button" data-tense="Future">Future</button>
-</div>
+    <div id="tense-buttons" style="margin-bottom: 20px;">
+      <button class="tense-button" data-tense="Present">Present</button>
+      <button class="tense-button active" data-tense="Past">Past</button>
+      <button class="tense-button" data-tense="Future">Future</button>
+    </div>
 
-<div id="level-list"></div>
+    <div id="level-list"></div>
 
-<div id="game" style="display:none;">
-  <h2 id="level-title"></h2>
-  <div id="timer">Time: 0s</div>
-  <div id="questions"></div>
-  <button id="submit">Submit</button>
-</div>
+    <div id="game" style="display: none;">
+      <div id="timer">Time: 0s</div>
+      <div id="questions"></div>
+      <button id="submit">Check Answers</button>
+      <div id="results"></div>
+    </div>
 
-<div id="results"></div>
+  </div>
 
-<script src="script.js"></script>
-
+  <script src="script.js"></script>
 </body>
 </html>
