@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
   <meta charset="UTF-8">
   <title>Turbooooooo</title>
@@ -8,11 +8,18 @@
 
 <body>
 
-<h1>Turbooooooo</h1>
+<h1><span class="turbo">TURBOOOOOOO</span></h1>
+
+<div id="tense-buttons">
+  <button class="tense-button active" data-tense="Present">Present</button>
+  <button class="tense-button" data-tense="Past">Past</button>
+  <button class="tense-button" data-tense="Future">Future</button>
+</div>
 
 <div id="level-list"></div>
 
 <div id="game" style="display:none;">
+  <h2 id="level-title"></h2>
   <div id="timer">Time: 0s</div>
   <div id="questions"></div>
   <button id="submit">Submit</button>
