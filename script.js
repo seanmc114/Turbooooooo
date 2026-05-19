@@ -333,7 +333,7 @@ function renderLevels() {
 
   for (let i = 1; i <= 10; i++) {
     const button = document.createElement("button");
-    const bestTimeKey = `bestTime_${currentTense}_Level${i}`;
+    const bestTimeKey = `turbo_waswere_bestTime_${currentTense}_Level${i}`;
     const bestTime = localStorage.getItem(bestTimeKey);
     const locked = i > unlockedLevels[currentTense];
 
@@ -424,11 +424,12 @@ document.getElementById("submit").addEventListener("click", () => {
     }
   });
 
-  const bestTimeKey = `bestTime_${currentTense}_Level${currentLevel}`;
+  const bestTimeKey = `turbo_waswere_bestTime_${currentTense}_Level${currentLevel}`;
   const savedBestTime = localStorage.getItem(bestTimeKey);
 
   if (!savedBestTime || totalTime < parseInt(savedBestTime, 10)) {
     localStorage.setItem(bestTimeKey, totalTime);
+    showArcadeCode('waswere', totalTime);
   }
 
   if (totalTime <= levelUnlockTime(currentLevel)) {
